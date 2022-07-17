@@ -1,0 +1,24 @@
+.App {
+  display: grid;
+  min-width: 320px;
+  min-height: 100vh;
+  grid-template-columns: 80px 17fr;
+  grid-template-areas:
+      "hd hd"
+      "sd main";
+
+  .App__header {
+    grid-area: hd;
+  }
+
+  .App__sidebar {
+    grid-area: sd;
+  }
+
+  .App__main {
+    grid-area: main;
+  }
+}
+
+
+
