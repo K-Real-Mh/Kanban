@@ -1,0 +1,17 @@
+.Header {
+  padding: 0 24px;
+  background: #253F4B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .Header__logo {
+    display: inline-grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+}
