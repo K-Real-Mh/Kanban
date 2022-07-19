@@ -1,0 +1,25 @@
+.Account {
+  display: flex;
+  align-items: center;
+
+  .Account__price {
+    display: inline-grid;
+    grid-auto-flow: column;
+    gap: 7px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+
+  .Account__button {
+    margin-left: 23px;
+    display: flex;
+  }
+
+  .Account__info {
+    margin-left: 40px;
+    display: inline-grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    align-items: center;
+  }
+}
