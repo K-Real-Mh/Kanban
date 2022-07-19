@@ -1,0 +1,39 @@
+.Navigation {
+
+  .Navigation__list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Navigation__item {
+    list-style-type: none;
+  }
+
+  .Navigation__link {
+    line-height: 19px;
+    color: #B8B8B8;
+    transition: color .3s ease;
+  }
+
+  .Navigation__link.Navigation__link_active {
+    &:after {
+      content: '';
+      background: #E96880;
+      position: absolute;
+      height: 2px;
+      width: calc(100% + 8px);
+      bottom: -2px;
+      left: -4px;
+    }
+  }
+
+  .Navigation__link.Navigation__link_active,
+  .Navigation__link:hover {
+    color: #FFFFFF;
+    position: relative;
+  }
+
+}
