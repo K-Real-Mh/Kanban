@@ -2,7 +2,8 @@
   display: grid;
   min-width: 320px;
   min-height: 100vh;
-  grid-template-columns: 80px 17fr;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 80px 1fr;
   grid-template-areas:
       "hd hd"
       "sd main";
