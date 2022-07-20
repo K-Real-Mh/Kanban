@@ -20,7 +20,7 @@ function Account({ data }) {
                 <Avatar src={data.src} />
                 <Button
                     text={data.name}
-                    icon={<Icon name="ArrowDown" width="10" height="5" />}
+                    icon={<Icon name="ArrowDownIcon" width="10" height="5" />}
                 />
             </div>
         </div>
