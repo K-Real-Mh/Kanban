@@ -1,0 +1,16 @@
+.Avatars {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  .Avatars__avatar {
+    list-style-type: none;
+    display: flex;
+    max-height: 20px;
+
+    &:last-of-type {
+      max-height: none;
+    }
+  }
+}
