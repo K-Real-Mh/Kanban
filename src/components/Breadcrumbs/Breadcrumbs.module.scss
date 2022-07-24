@@ -1,0 +1,32 @@
+.Breadcrumbs {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 8px;
+
+  .Breadcrumbs__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    .Breadcrumbs__item {
+      list-style-type: none;
+
+      &:not(:first-child)::before {
+        content: "/";
+        padding: 0 5px;
+        color: #A6A6A6;
+      }
+
+      a {
+        font-weight: 400;
+        color: #A6A6A6;
+        transition: color .3s ease;
+
+        &:hover {
+          color: #E96880;
+        }
+      }
+    }
+  }
+}
