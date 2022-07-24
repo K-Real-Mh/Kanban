@@ -1,0 +1,66 @@
+.Card {
+  display: flex;
+  background: #F5F5F5;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .Card__info {
+    padding: 14px 16px;
+    background: #EFEFEF;
+  }
+
+  .Card__avatars {
+    margin-bottom: 24px;
+    pointer-events: none;
+  }
+
+  .Card__rating {
+
+    &.Card__rating_1, &.Card__rating_2, &.Card__rating_3, &.Card__rating_4, &.Card__rating_5 {
+      svg {
+        path:nth-child(5) {
+          fill: #5FCE8D;
+        }
+      }
+    }
+
+    &.Card__rating_2, &.Card__rating_3, &.Card__rating_4, &.Card__rating_5 {
+      svg {
+        path:nth-child(4) {
+          fill: #4BB276;
+        }
+      }
+    }
+
+    &.Card__rating_3, &.Card__rating_4, &.Card__rating_5 {
+      svg {
+        path:nth-child(1) {
+          fill: #E9A668;
+        }
+      }
+    }
+
+    &.Card__rating_3, &.Card__rating_4, &.Card__rating_5 {
+      svg {
+        path:nth-child(2) {
+          fill: #E2954D;
+        }
+      }
+    }
+
+    &.Card__rating_3, &.Card__rating_4, &.Card__rating_5 {
+      svg {
+        path:nth-child(3) {
+          fill:  #E96880;
+        }
+      }
+    }
+  }
+
+  .Card__name {
+    padding: 15px 16px 15px 12px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+}
