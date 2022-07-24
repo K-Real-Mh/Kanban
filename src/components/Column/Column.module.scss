@@ -1,0 +1,58 @@
+.Column {
+
+  .Column__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  .Column__name {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .Column__btns {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .Column__cards {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Column__card {
+    margin-bottom: 16px;
+    list-style-type: none;
+    cursor: grab;
+  }
+
+  .Column__button {
+    display: flex;
+    justify-content: center;
+
+    button {
+      background: #D0D0D0;
+      border-radius: 4px;
+      padding: 9px;
+      transition: background-color .3s ease;
+
+      &:hover {
+        background: #7EA4E7;
+
+        svg {
+          path {
+            fill: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
