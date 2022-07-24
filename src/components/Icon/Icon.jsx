@@ -1,9 +1,5 @@
-import React, { memo } from 'react';
-import * as icons from '../../icons';
-
-function getIconByName(name) {
-    return icons[name];
-}
+import { memo } from 'react';
+import { getIconByName } from '../../helpers/getIconByName.js';
 
 function Icon({ width = '20', height = '20', viewBox, name, color = '#FFFFFF' }) {
     const IconComponent = getIconByName(name);
@@ -26,6 +22,16 @@ function Icon({ width = '20', height = '20', viewBox, name, color = '#FFFFFF' })
             break;
         case 'QuestionIcon':
             viewBoxCustom = '0 0 24 24'
+            break;
+        case 'WavesIcon':
+            viewBoxCustom = '0 0 20 18'
+            break;
+        case 'TrashIcon':
+        case 'PencilIcon':
+            viewBoxCustom = '0 0 14 15'
+            break;
+        case 'ChevronIcon':
+            viewBoxCustom = '0 0 34 14'
             break;
     }
 
